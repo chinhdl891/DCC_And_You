@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionWeather"
+        android:icon="@drawable/rain"
+        android:title="@string/action_weather" />
+    <item
+        android:id="@+id/action_News"
+        android:icon="@drawable/news"
+        android:title="@string/action_news" />
+</menu>

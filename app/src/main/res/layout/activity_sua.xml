@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:background="@drawable/galaxy2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity.SuaActivity">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:gravity="center"
+            android:text="Sửa Tin"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="28sp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ID"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12345678"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+               android:padding="10dp"
+                android:id="@+id/tvAnh"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Hình Ảnh"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+         <LinearLayout
+            android:paddingTop="10dp"
+             android:paddingBottom="10dp"
+             android:layout_width="0dp"
+             android:layout_weight="7"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <androidx.cardview.widget.CardView
+                 app:cardCornerRadius="10dp"
+                 android:id="@+id/cardView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_toRightOf="@+id/tvAnh">
+                 <ImageView
+                     android:id="@+id/imageNews"
+                     android:layout_width="match_parent"
+                     android:layout_height="120dp"
+                     android:layout_centerVertical="true"
+                     android:scaleType="centerCrop"
+                     android:src="@drawable/iconapp" />
+             </androidx.cardview.widget.CardView>
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/btnUpdateImage"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/cardView"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="10dp"
+                 android:layout_toRightOf="@+id/tvAnh"
+                 android:background="@drawable/backgruond_botron"
+                 android:backgroundTint="#F56CD0DC"
+                 android:textAllCaps="false"
+                 android:text="Thay ảnh"
+                 android:textColor="@color/whiteTextColor" />
+         </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="Tiêu Đề"
+                android:textColor="@color/whiteTextColor" />
+            <EditText
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/backgruond_botron_ed_admin"
+                android:hint="Tiêu Đề"
+                android:padding="10dp"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="Nội dung"
+                android:textColor="@color/whiteTextColor" />
+            android:layout_height="wrap_content">
+            <EditText
+                android:overScrollMode="always"
+                android:lines="6"
+                android:id="@+id/tvcontent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/backgruond_botron_ed_admin"
+                android:hint="Nội dung"
+                android:padding="10dp"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCapNhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/backgruond_botron"
+            android:backgroundTint="#D3EBED"
+            android:textAllCaps="false"
+            android:text="Cập nhật" />
+    </LinearLayout>
+</ScrollView>

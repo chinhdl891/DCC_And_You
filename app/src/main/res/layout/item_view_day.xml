@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:id="@+id/cardView"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:alpha="0.7"
+        android:weightSum="10">
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:id="@+id/tvNgay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ngay Thang Nam"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        <ImageView
+            android:background="@null"
+            android:id="@+id/imageIcon"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/no_wifi"/>
+        <TextView
+            android:layout_weight="4"
+            android:id="@+id/tvMax"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="100"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_weight="0"
+            android:id="@+id/tvMin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="100"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

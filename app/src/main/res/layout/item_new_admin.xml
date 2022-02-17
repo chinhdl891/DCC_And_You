@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/backgruond_botron_admin"
+   >
+    <androidx.cardview.widget.CardView
+        android:alpha="0.8"
+        app:cardCornerRadius="12dp"
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imageNews"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/news" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_toEndOf="@+id/cardView"
+        android:layout_toRightOf="@id/cardView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="Ten Bai Bao "
+        android:textColor="#000000"
+        android:textStyle="bold|italic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/cardView"
+        android:background="@drawable/backgruond_botron"
+        android:text="Cập Nhật"
+        android:textColor="#5E5C5C" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnXoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/backgruond_botron"
+        android:text="Xóa Tin"
+        android:textColor="#5E5C5C" />
+</RelativeLayout>

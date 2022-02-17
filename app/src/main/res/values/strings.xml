@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DCC And You</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_rePassword_hint">RePassword</string>
+    <string name="city_name">City</string>
+    <string name="action_weather">Weather</string>
+    <string name="action_news">News</string>
+    <string name="action_user">User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gps_network_not_enabled">GPS not enable</string>
+    <string name="open_location_settings">LocationSetting</string>
+    <string name="Cancel">Cancel</string>
+</resources>

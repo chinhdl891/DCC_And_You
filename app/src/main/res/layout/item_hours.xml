@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_width="80dp"
+    android:layout_margin="5dp"
+    android:background="@null"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="09:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvhours"/>
+        <ImageView
+            android:src="@drawable/rain"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgHours"/>
+        <TextView
+            android:text="Nhiet Do"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempHours"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

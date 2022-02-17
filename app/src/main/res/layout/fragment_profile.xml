@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:src="@drawable/iconapp"
+            android:id="@+id/imageBackgrond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:scaleType="centerCrop" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="360dp">
+
+            <ImageView
+                android:id="@+id/imageIconAvata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/admin64px" />
+
+            <ImageView
+                android:id="@+id/btnChangeImage"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_photo_camera_24" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/cardView"
+            android:text="Chinh dep trai"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:paddingBottom="10dp"
+       android:layout_weight="6">
+       <RelativeLayout
+           android:paddingBottom="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="6"
+           android:orientation="vertical"
+           android:paddingLeft="30dp"
+           android:paddingTop="30dp"
+           android:paddingRight="30dp">
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/textInputEmail"
+               style="@style/parent"
+               android:layout_marginTop="@dimen/loginViewsMargin">
+               <EditText
+                   android:textSize="14sp"
+                   android:id="@+id/editTextEmailPro"
+                   style="@style/viewParent.headerText.NoMode"
+                   android:layout_width="match_parent"
+                   android:layout_height="51dp"
+                   android:hint="@string/login_email_hint"
+                   android:inputType="textEmailAddress"
+                   android:maxLines="1" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/textInputPass"
+               style="@style/parent"
+               android:layout_below="@+id/textInputEmail"
+               android:layout_marginTop="@dimen/loginViewsMargin">
+
+               <EditText
+                   android:textSize="14sp"
+                   android:id="@+id/editTextPassPro"
+                   style="@style/viewParent.headerText.NoMode"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/login_password_hint"
+                   android:inputType="textPassword"
+                   android:maxLines="1" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/textInputRePass"
+               style="@style/parent"
+               android:layout_below="@+id/textInputPass"
+               android:layout_marginTop="@dimen/loginViewsMargin">
+
+               <EditText
+                   android:textSize="14sp"
+                   android:id="@+id/editTextRePassPro"
+                   style="@style/viewParent.headerText.NoMode"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/login_rePassword_hint"
+                   android:inputType="textPassword"
+                   android:maxLines="1" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <LinearLayout
+
+               android:layout_below="@+id/textInputRePass"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+               android:orientation="horizontal"
+               android:weightSum="10">
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/btnCapNhat"
+                   style="@style/loginButton"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="10dp"
+                   android:layout_weight="5"
+                   android:text="Cập Nhật" />
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/btnDangXuat"
+                   style="@style/logoutButton"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_weight="5"
+                   android:text="Đăng Xuất" />
+           </LinearLayout>
+       </RelativeLayout>
+   </ScrollView>
+
+</LinearLayout>

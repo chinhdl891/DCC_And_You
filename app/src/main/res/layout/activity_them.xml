@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy2"
+    android:paddingTop="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".Activity.SuaActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Thêm Tin"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tvAnh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Hình Ảnh"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/tvAnh"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageNewsThem"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iconapp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/addImageThem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/tvAnh"
+                    android:background="@drawable/backgruond_botron"
+                    android:backgroundTint="#F56CD0DC"
+                    android:text="Thay ảnh"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteTextColor" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:weightSum="10"-->
+        <!--            android:gravity="center"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--            <TextView-->
+        <!--                android:layout_weight="2"-->
+        <!--                android:padding="10dp"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:text="Tiêu Đề"-->
+        <!--                android:textColor="@color/whiteTextColor" />-->
+        <!--            <com.google.android.material.textfield.TextInputLayout-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="8"-->
+        <!--                android:layout_height="wrap_content">-->
+        <!--                <EditText-->
+        <!--                    android:padding="10dp"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:hint="Tiêu Đề"-->
+        <!--                    android:textColorHint="@color/whiteTextColor"-->
+        <!--                    android:id="@+id/tvTitle"-->
+        <!--                    android:textColor="@color/whiteTextColor"/>-->
+        <!--            </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:text="Tiêu Đề"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/tvTitleThem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/backgruond_botron_ed_admin"
+                android:hint="Tiêu Đề"
+                android:padding="10dp"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:text="Nội dung"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:overScrollMode="always"
+                android:lines="6"
+                android:id="@+id/tvContentThem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/backgruond_botron_ed_admin"
+                android:hint="Nội dung"
+                android:padding="10dp"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="@color/whiteTextColor" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addNewsThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/backgruond_botron"
+            android:backgroundTint="#D3EBED"
+            android:text="Thêm"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6B5C5"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#970EBC85">
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/news" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tempNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Nhiet do"
+                android:textColor="@color/whiteTextColor" />
+
+            <TextView
+                android:id="@+id/desTempNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhiet do"
+                android:textColor="@color/whiteTextColor" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/admin64px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextTimKiem"
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/backgruond_botron"
+            android:drawableEnd="@drawable/ic_baseline_search_32"
+            android:ellipsize="start"
+            android:hint="Tìm kiếm"
+            android:inputType="textEmailAddress"
+            android:padding="3dp"
+            android:paddingStart="15dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/newProgressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large.Inverse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/editTextTimKiem"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp" />
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+
+<!--            android:id="@+id/refreshLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editTextTimKiem"
+                android:id="@+id/recylerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
